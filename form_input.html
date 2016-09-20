@@ -1,0 +1,83 @@
+﻿<html>
+
+<HEAD>
+           <title>
+           	Добавление предмета
+          </title>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</HEAD>
+<body>
+ 	<br><br>
+ 	
+	<form action="input.php" method="POST">
+	
+	<?php date_default_timezone_set('Africa/Lagos'); ?>
+
+	<table align="center">
+		<tr><td>Время начала занятия:</td><td>   
+		<select name="time" maxlength="20">
+  
+		     	 <option selected value="1">8:00 </option>
+		     	 <option value="2">9:40 </option>
+		     	 <option value="3">11:30 </option>
+		      	 <option value="4">14:50</option>
+		     	 <option value="5">15:30</option>
+		      	<option value="6">17:10</option>
+		                <option value="7">18:50 </option>
+                                                           
+		</select>
+		</td></tr>
+
+		<tr><td>День недели:</td><td>   
+
+		<select name="date"  maxlength="20">
+		           <option selected value="1">Пн.</option>
+		            <option value="2">Вт. </option>
+		           <option value="3">Ср. </option>
+		            <option value="4">Чт. </option>
+		           <option value="5">Пт. </option>
+		           <option value="6">Сб. </option>
+                                                           
+ 		</select>
+		</td></tr>
+
+		 <tr><td>№ аудитории:</td><td> 
+
+		<select name="hall_number" maxlength="20">  
+		        
+		           <option selected value="515">515 </option>
+		                 <option value="516">516 </option>
+		           <option value="517">517 </option>
+		                 <option value="518">518 </option>
+		           <option value="519">519 </option>                                           
+ 		</select>
+		</td></tr>
+  
+		<tr><td> ФИО преподавателя:</td><td>   
+	
+		<select name="teacher_name" maxlength="20">
+		            <option selected value="Головатая">Головатая</option>
+		           <option value="Матвеева">Матвеева</option>
+		            <option value="Ермоленко">Ермоленко</option>
+		           <option value="Макаров">Макаров</option>
+		           <option value="Довжко">Довжко</option>
+             		</select>
+          	    	</td></tr>
+
+               		<tr><td> № группы:</td> <td> 
+
+		<input type="int" size="20" maxlength="20" name="gr_number"> </td></tr>
+
+		<tr><td> Примечание:</td><td> 
+			<input type="text" size="20" maxlength="20" name="info"> 
+		</td></tr>
+
+		<tr><td>
+			<colspan="2" align="center"><input type="submit" name="submit" value="Добавить данные"; >
+		</td></tr>
+
+	</table>
+ </body>
+ </html>
+
+
